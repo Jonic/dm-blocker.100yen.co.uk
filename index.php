@@ -1,6 +1,6 @@
 <?php
 
-	$cats = [
+	$cats = array(
 	    "running.gif",
 	    "e9906e9a-3bd0-4b92-ae96-4fc7c524f98a.gif",
 	    "dancingcat.gif",
@@ -130,7 +130,7 @@
 	    "tommy_the_cat.gif",
 	    "yawn.gif",
 	    "catfan.gif"
-	];
+	);
 
 	$cat = array_rand($cats);
 
