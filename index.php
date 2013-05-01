@@ -156,6 +156,6 @@
 	</head>
 
 	<body>
-		<img alt="" src="http://procatinator/images/<?php echo $cats[$cat]; ?>" />
+		<img alt="" src="http://procatinator.com/images/<?php echo $cats[$cat]; ?>" />
 	</body>
 </html>
