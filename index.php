@@ -147,6 +147,11 @@
 				padding: 0;
 			}
 
+			html, body {
+				height: 100%;
+				width: 100%;
+			}
+
 			img {
 				display: block;
 				height: 100%;
