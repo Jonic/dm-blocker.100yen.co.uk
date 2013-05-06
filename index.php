@@ -9,6 +9,8 @@
 	<head>
 		<title>STOP</title>
 
+		<meta name="google-site-verification" content="EJOTQWsVwuMA6tjtdmDXM0v8ejx4G12gMnu9MKnT5f4" />
+
 		<style>
 			* {
 				border: 0;
