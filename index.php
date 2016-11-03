@@ -9,7 +9,7 @@
 	<head>
 		<title>Daily Mail Blocker</title>
 
-		<meta name="google-site-verification" content="EJOTQWsVwuMA6tjtdmDXM0v8ejx4G12gMnu9MKnT5f4" />
+		<meta name="google-site-verification" content="EJOTQWsVwuMA6tjtdmDXM0v8ejx4G12gMnu9MKnT5f4">
 
 		<style>
 			* {
@@ -88,20 +88,16 @@
 			</p>
 		</div>
 
-		<img alt="" src="/images/<?php echo $cat_file; ?>.gif" />
+		<img alt="" src="/images/<?php echo $cat_file; ?>.gif">
 
-		<script type="text/javascript">
-		  var _gauges = _gauges || [];
-		  (function() {
-		    var t   = document.createElement('script');
-		    t.type  = 'text/javascript';
-		    t.async = true;
-		    t.id    = 'gauges-tracker';
-		    t.setAttribute('data-site-id', '5186ac12613f5d3c86000002');
-		    t.src = '//secure.gaug.es/track.js';
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(t, s);
-		  })();
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-85981-9', 'auto');
+			ga('send', 'pageview');
 		</script>
 	</body>
 </html>

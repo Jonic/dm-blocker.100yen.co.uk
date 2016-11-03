@@ -1,2 +1,1 @@
-sanitypreservationservice
-=========================
+# Daily Mail Blocker
