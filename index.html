@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta
+      name="google-site-verification"
+      content="EJOTQWsVwuMA6tjtdmDXM0v8ejx4G12gMnu9MKnT5f4"
+    />
+    <title>Daily Mail Blocker</title>
+    <style>
+      * {
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: #3c8fc7;
+      }
+
+      html,
+      body {
+        background: #000;
+        color: #333;
+        font-family: Helvetica, Arial, sans-serif;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .psa {
+        background: rgba(255, 255, 255, 0.5);
+        bottom: 0;
+        border-radius: 1em 1em 0 0;
+        box-sizing: border-box;
+        left: 50%;
+        max-width: 600px;
+        padding: 1em 1em;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 90%;
+      }
+
+      .psa h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        text-align: center;
+      }
+
+      .psa p {
+        line-height: 1.4;
+        margin-bottom: 1em;
+      }
+
+      .psa p:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="psa">
+      <h1>Hang on a second!</h1>
+
+      <p>
+        You were headed to the Daily Mail's website. Have a look at this cat gif
+        instead. Refresh for another, if you like.
+      </p>
+
+      <p>
+        Another selfless act performed just for you by
+        <a href="http://twitter.com/Jonic">@Jonic</a>. You're <em>welcome</em>.
+      </p>
+    </header>
+
+    <script>
+      const maxImageNumber = 185;
+
+      const catImageSrc = () => {
+        let imageNum = getRandomInteger();
+        return `./images/${imageNum}.gif`;
+      };
+
+      const getRandomInteger = () => {
+        let min = 1;
+        let max = maxImageNumber;
+        return Math.floor(Math.random() * (max - min)) + min;
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.style.backgroundImage = `url(${catImageSrc()})`;
+      });
+    </script>
+  </body>
+</html>
